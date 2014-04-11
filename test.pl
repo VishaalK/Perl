@@ -28,3 +28,9 @@ my %scientists = ("Newton", "Isaac", "Darwin", "Charles", "Gorlaug", "Norman");
 print $scientists{"Newton"} . "\n";
 
 #can't use $var[num || string] unless explicitly declared as my @var
+my @friends = ("Anthony", "Tara", "Rohan");
+my @ckfriends = ("April", "Eugene", "Jake", @friends);
+
+print @ckfriends;
+print "\n";
+print "@ckfriends\n";
