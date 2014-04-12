@@ -34,3 +34,13 @@ my @ckfriends = ("April", "Eugene", "Jake", @friends);
 print @ckfriends;
 print "\n";
 print "@ckfriends\n";
+
+
+#references to variables
+my @interests = ("Drawing", "Programming", "Volunteering", "Learning");
+my $interestRef = \@interests;
+
+print "---REFERENCES TO VARIABLES---\n";
+print $interestRef; print "\n";
+print ${$interestRef}[0]; print "\n";
+print $interestRef->[0]; print "\n";
