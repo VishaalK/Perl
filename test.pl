@@ -44,3 +44,24 @@ print "---REFERENCES TO VARIABLES---\n";
 print $interestRef; print "\n";
 print ${$interestRef}[0]; print "\n";
 print $interestRef->[0]; print "\n";
+
+print "---COMPLEX DATA STRUCTURES AND INFORMATION RETRIEVAL---\n";
+# [ item1, ... ] is an anonymous array, { } is an anonymous hash, they return references
+
+my %account = (
+	"number" => "31415926",
+	"opened" => "3000-01-01",
+	"owners" => [
+		{
+			"name" => "Philip Fry",
+			"DOB"  => "1974-08-06",
+		},
+		{
+			"name" => "Hubert Farnsworth",
+			"DOB"  => "2841-04-09",
+		},
+	],
+);
+
+print "Account #", $account{"number"}, "\n";
+print "Opened on ", $account{"opened"}, "\n";
