@@ -11,3 +11,4 @@ sub factorial {
 }
 
 print factorial(5) . "\n";
+print "Dirty nerds\n";
